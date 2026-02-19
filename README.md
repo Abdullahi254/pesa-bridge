@@ -30,7 +30,7 @@ mpesa-b2c/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Abdullahi254/B2C.git
 cd mpesa-b2c
 ```
 
