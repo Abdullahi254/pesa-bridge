@@ -31,7 +31,7 @@ mpesa-b2c/
 
 ```bash
 git clone https://github.com/Abdullahi254/B2C.git
-cd mpesa-b2c
+cd B2C
 ```
 
 ### 2. Install dependencies
