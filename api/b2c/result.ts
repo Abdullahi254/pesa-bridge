@@ -78,13 +78,6 @@ export default async function handler(
         // - Match by ConversationID
         // - Store receipt & completion time
 
-        return res.status(200).json({
-            success: true,
-            transaction_id: transactionId,
-            amount: transactionAmount,
-            status: "completed",
-            message: "Transaction processed successfully."
-        });
     } else {
         // ❌ FAILURE
         console.error("B2C FAILED:", {
@@ -102,12 +95,9 @@ export default async function handler(
      * IMPORTANT:
      * Always return HTTP 200 to Safaricom
      */
-    return res.status(400).json({
-        success: false,
-        transaction_id: transactionId,
-        amount: transactionAmount,
-        status: "failed",
-        message: readableMessage || "Transaction failed."
+    return res.status(200).json({
+        ResultCode: 0,
+        ResultDesc: "Accepted"
     });
 
 }
